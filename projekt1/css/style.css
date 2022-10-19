@@ -89,7 +89,9 @@
 .bg-dark {
     background: #333;
     color: #fff;
-
+}
+.bg-primary {
+    background-color: #f7c08a;
 }
 
 .bg-light{
@@ -119,7 +121,7 @@ h1, h2, h3 {
 }
 
 p {
-    margin: 10px 0 10px 0;
+    margin-bottom: 20px;
 }
 
 /* Novbar */
@@ -256,6 +258,68 @@ p {
     color: white;
 }
 
-#showcase .container h1 {
+#showcase .
+h1 {
     font-size: 40px;
+}
+
+/* about */
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img {
+    display: block;
+    width: 80%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* testimonials*/
+#testimonials {
+    height: 600px;
+    background: url("../img/184305239.jpg") no-repeat center center/cover;
+    padding-top: 100px;
+}
+
+#testimonials h2 {
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 3em;
+}
+
+#testimonials .testimonial {
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+#testimonials .testimonial img {
+    width: 100px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+
+}
+
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 10px;
 }
