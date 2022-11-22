@@ -138,6 +138,11 @@ footer {
     background: #291317;
 }
 
+bg-grey {
+    color: white;
+    background: #76858d;
+}
+
 .main-color {
     color: darkred;
     font-family: cursive;
