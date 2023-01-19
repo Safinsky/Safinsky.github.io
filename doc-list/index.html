@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Java Documentation Page</title>
+</head>
+
+
+<body>
+<main id="main-doc">
+    <nav id="navbar">
+        <header>Java documentation</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#History" class="nav-link">History</a>
+        <a href="#Programming_examples" class="nav-link">Programming examples</a>
+        <a href="#Java_Variables" class="nav-link">Java Variables</a>
+        <a href="#Source" class="nav-link">Source</a>
+    </nav>
+    <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few
+            implementation dependencies as possible. It is a general-purpose programming language intended to let
+            programmers write once, run anywhere</p>
+    </section>
+    <section class="main-section" id="History">
+        <header>History</header>
+        <p>Java was designed by James Gosling in 1990 at Sunmicro systems. James Gosling, Mike Sheridan, and Patrick Nau
+            ghton initiated the Java language project in June 1991. Java was originally designed for interactive
+            television, but it was too advanced for the digital cable television industry at the time. The language was
+            initially called Oak after an oak tree that stood outside Gosling's office. Later the project went by the
+            name Green and was finally renamed Java, from Java coffee, a type of coffee from Indonesia. Gosling
+            designed Java with a C/C++-style syntax that system and application programmers would find familiar.</p>
+        <p>Sun Microsystems released the first public implementation as Java 1.0 in 1996. It promised write once, run
+            anywhere functionality, providing no-cost run-times on popular platforms. Fairly secure and featuring
+            configurable security, it allowed network- and file-access restrictions. Major web browsers soon
+            incorporated the ability to run Java applets within web pages, and Java quickly became popular.</p>
+        <p>The Java 1.0 compiler was re-written in Java by Arthur van Hoff to comply strictly with the Java 1.0
+            language specification. With the advent of Java 2 (released initially as J2SE 1.2 in December 1998 – 1999),
+            new versions had multiple configurations built for different types of platforms. J2EE included technologies
+            and APIs for enterprise applications typically run in server environments, while J2ME featured APIs
+            optimized for mobile applications. The desktop version was renamed J2SE. In 2006, for marketing purposes,
+            Sun renamed new J2 versions as Java EE, Java ME, and Java SE, respectively.</p>
+    </section>
+    <section class="main-section" id="Programming_examples">
+        <header>Programming examples</header>
+        <p>Hello world program:</p>
+        <code>public class Main {<br>
+            &ensp;public static void main(String[] args) {<br>
+                &ensp; &ensp;System.out.println("Hello World");<br>
+            &ensp;}<br>
+        }
+        </code>
+        <p>Code where a Variable called name of type String and assign it the value "John":</p>
+        <code>String name = "John";<br>
+            System.out.println(name);</code>
+        <p>Java program to add two integers:</p>
+        <code>class Main {<br><br>
+            &ensp;public static void main(String[] args) {<br><br>
+            &ensp; &ensp;int first = 10;<br>
+            &ensp; &ensp;int second = 20;<br><br>
+            &ensp; &ensp;int sum = first + second;<br>
+            &ensp; &ensp;System.out.println(first + " + " + second + " = "  + sum);<br>
+            &ensp;}<br>
+            }
+        </code>
+        <p>Java program to multiply Two Floating-Point Numbers</p>
+        <code>public class MultiplyTwoNumbers {<br><br>
+            &ensp;public static void main(String[] args) {<br><br>
+            &ensp; &ensp;float first = 1.5f;<br>
+            &ensp; &ensp;float second = 2.0f;<br><br>
+            &ensp; &ensp;float product = first * second;<br><br>
+            &ensp; &ensp;System.out.println("The product is: " + product);<br>
+            &ensp;  }<br>
+            }
+        </code>
+        <p>Java program that finds the longest prefix string</p>
+        <code>public String longestCommonPrefix(String[] strs) {<br>
+            &ensp;if(strs.length==0) return "";<br>
+            &ensp;String prefix=strs[0];<br>
+            &ensp;for(int i=1;i<strs.length;i++){<br>
+            &ensp;&ensp;while(strs[i].indexOf(prefix)!=0){<br>
+            &ensp;&ensp;&ensp;prefix=prefix.substring(0,prefix.length()-1);<br>
+            &ensp;&ensp;}<br><br>
+            &ensp;}<br>
+            &ensp;return prefix;<br><br><br>
+            }
+        </code>
+    </section>
+    <section class="main-section" id="Java_Variables">
+        <header>Java Variables</header>
+        <p>In Java, there are different types of variables, for example:</p>
+            <p>&ensp;&ensp;String - stores text, such as "Hello". String values are surrounded by double quotes <br>
+            &ensp;&ensp;int - stores integers (whole numbers), without decimals, such as 123 or -123 <br>
+            &ensp;&ensp;float - stores floating point numbers, with decimals, such as 19.99 or -19.99 <br>
+            &ensp;&ensp;char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes <br>
+            &ensp;&ensp;boolean - stores values with two states: true or false
+        </p>
+    </section>
+    <section class="main-section" id="Source">
+        <header>Source</header>
+        <p>All the documentation in this page is taken from <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Wikipedia</a> and my experience</p>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Java_(programming_language)#History">History</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Java_(programming_language)#Editions">Editions</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Java_(programming_language)#Syntax">Syntax</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Java_(programming_language)#Class_libraries">Class libraries</a></li>
+            </ul>
+    </section>
+</main>
+</body>
+</html>
